@@ -11,8 +11,8 @@ if img is None:
 denoised = cv2.fastNlMeansDenoisingColored(
     img,
     None,
-    h=10,
-    hColor=10,
+    h=10, #On the basis of strength of luminance noise
+    hColor=10, #On the basis of color noise strength
     templateWindowSize=7,
     searchWindowSize=21
 )
