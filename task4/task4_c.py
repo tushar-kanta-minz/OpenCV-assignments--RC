@@ -22,7 +22,7 @@ while True:
 
     # Bottom-left : HSV
     hsv = cv2.cvtColor(small, cv2.COLOR_BGR2HSV)
-    hsv_display = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+    hsv_display = cv2.cvtColor(hsv, cv2.COLOR_BGR2HSV)
 
     # Bottom-right : Red Channel Only
     red = np.zeros_like(small)
